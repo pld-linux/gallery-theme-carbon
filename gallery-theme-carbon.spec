@@ -11,8 +11,6 @@ URL:		http://www.mincel.com/carbon/
 BuildRequires:	rpmbuild(macros) >= 1.268
 BuildRequires:	unzip
 Requires:	gallery >= 2.1.0
-# Will be needed when modules will be separated to packages
-#Requires:	gallery-module-imageframe
 Requires:	webapps
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
