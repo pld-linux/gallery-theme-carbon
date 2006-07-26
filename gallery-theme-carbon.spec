@@ -2,11 +2,12 @@
 Summary:	Carbon Theme for Gallery2
 Name:		gallery-theme-%{_theme}
 Version:	1.1.1
-Release:	0.1
+Release:	0.2
 License:	GPL
 Group:		Applications/Publishing
 Source0:	http://www.mincel.com/carbon/g2-theme-%{_theme}-%{version}-blackjack.zip
 # Source0-md5:	d59db6cb6daecda88617c1bf54ce5898
+Patch0:		%{name}-hoverbox.patch
 URL:		http://www.mincel.com/carbon/
 BuildRequires:	rpmbuild(macros) >= 1.268
 BuildRequires:	unzip
@@ -22,6 +23,7 @@ I've developed Carbon theme for personal needs for Gallery 2. It is based on Mat
 
 %prep
 %setup -q -n themes
+%patch0 -p1
 
 %install
 rm -rf $RPM_BUILD_ROOT
