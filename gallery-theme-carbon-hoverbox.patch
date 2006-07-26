@@ -4,9 +4,9 @@
  
      {* Include this theme's style sheet *}
      <link rel="stylesheet" type="text/css" href="{g->theme url="theme.css"}"/>
-+    <link rel="stylesheet" href='/hoverbox/hoverbox.css' type="text/css" media="screen, projection" />
++    <link rel="stylesheet" href='hoverbox/hoverbox.css' type="text/css" media="screen, projection" />
 +    <!--[if IE]>
-+    <link rel="stylesheet" href='/hoverbox/ie_fixes.css' type="text/css" media="screen, projection" />
++    <link rel="stylesheet" href='hoverbox/ie_fixes.css' type="text/css" media="screen, projection" />
 +    <![endif]-->
      <script type="text/javascript" src="{g->url href='themes/carbon/theme.js'}"></script>
    </head>
@@ -29,7 +29,7 @@
 -        </td>
 -      {/if}
 +	{if ($peer.peerIndex == $data.thisPeerIndex)}
-+		<td width="44" height="40" align="center" style="background: url(/hoverbox/display.gif) no-repeat;">
++		<td width="44" height="40" align="center" style="background: url(hoverbox/display.gif) no-repeat;">
 +		 {g->image item=$peer image=$peer.thumbnail style="filter:alpha(opacity=33);-moz-opacity:.33;opacity:.33;" maxSize=40 title="Currently Displayed Image"}
 +		</td>
 +	{else}
