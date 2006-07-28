@@ -1,0 +1,10 @@
+--- ./carbon/templates/album.tpl.org	2006-04-06 22:23:12.000000000 +0200
++++ ./carbon/templates/album.tpl	2006-07-28 13:40:27.988210500 +0200
+@@ -135,6 +135,7 @@
+                           </a>
+                         {else}
+                           <a href="{g->url arg1="view=core.ShowItem" arg2="itemId=`$child.id`"}" class="giMissingThumbnail">
++				<img src="themes/carbon/images/agfolder.png" border="0"> <br>
+                             {g->text text="no thumbnail"}
+                           </a>
+                         {/if}
