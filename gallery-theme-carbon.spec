@@ -3,12 +3,14 @@ Summary:	Carbon Theme for Gallery2
 Summary(pl):	Motyw Carbon dla Gallery2
 Name:		gallery-theme-%{_theme}
 Version:	1.1.1
-Release:	0.2
+Release:	0.5
 License:	GPL
 Group:		Applications/Publishing
 Source0:	http://www.mincel.com/carbon/g2-theme-%{_theme}-%{version}-blackjack.zip
 # Source0-md5:	d59db6cb6daecda88617c1bf54ce5898
+Source1:	%{name}-agfolder.png
 Patch0:		%{name}-hoverbox.patch
+Patch1:		%{name}-agfolder.patch
 URL:		http://www.mincel.com/carbon/
 BuildRequires:	rpmbuild(macros) >= 1.268
 BuildRequires:	unzip
@@ -30,6 +32,7 @@ oparty na motywie Matrix. Dzia³a dobrze pod Firefoksem i IE6.
 %prep
 %setup -q -n themes
 %patch0 -p1
+%patch1 -p1
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -37,6 +40,8 @@ install -d $RPM_BUILD_ROOT%{_appdir}
 
 cd %{_theme}
 cp -R * $RPM_BUILD_ROOT%{_appdir}
+
+install %{SOURCE1} $RPM_BUILD_ROOT%{_appdir}/images/agfolder.png
 
 %clean
 rm -rf $RPM_BUILD_ROOT
