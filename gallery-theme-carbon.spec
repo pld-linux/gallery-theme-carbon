@@ -3,7 +3,7 @@ Summary:	Carbon Theme for Gallery2
 Summary(pl):	Motyw Carbon dla Gallery2
 Name:		gallery-theme-%{_theme}
 Version:	1.1.1
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications/Publishing
 Source0:	http://www.mincel.com/carbon/g2-theme-%{_theme}-%{version}-blackjack.zip
