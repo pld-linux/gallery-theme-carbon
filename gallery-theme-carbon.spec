@@ -1,6 +1,6 @@
 %define		_theme		carbon
 Summary:	Carbon Theme for Gallery2
-Summary(pl):	Motyw Carbon dla Gallery2
+Summary(pl.UTF-8):   Motyw Carbon dla Gallery2
 Name:		gallery-theme-%{_theme}
 Version:	1.1.1
 Release:	2
@@ -25,9 +25,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 I've developed Carbon theme for personal needs for Gallery 2. It is
 based on Matrix theme. The theme works well in Firefox and IE6.
 
-%description -l pl
-Modu≥ Carbon dla Gallery 2 powsta≥ na w≥asne potrzeby autora. Jest
-oparty na motywie Matrix. Dzia≥a dobrze pod Firefoksem i IE6.
+%description -l pl.UTF-8
+Modu≈Ç Carbon dla Gallery 2 powsta≈Ç na w≈Çasne potrzeby autora. Jest
+oparty na motywie Matrix. Dzia≈Ça dobrze pod Firefoksem i IE6.
 
 %prep
 %setup -q -n themes
