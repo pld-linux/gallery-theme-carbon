@@ -1,6 +1,6 @@
 %define		_theme		carbon
 Summary:	Carbon Theme for Gallery2
-Summary(pl.UTF-8):   Motyw Carbon dla Gallery2
+Summary(pl.UTF-8):	Motyw Carbon dla Gallery2
 Name:		gallery-theme-%{_theme}
 Version:	1.1.1
 Release:	2
