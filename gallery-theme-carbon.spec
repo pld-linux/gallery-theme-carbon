@@ -31,8 +31,8 @@ oparty na motywie Matrix. Działa dobrze pod Firefoksem i IE6.
 
 %prep
 %setup -q -n themes
-%patch0 -p1
-%patch1 -p1
+%patch -P0 -p1
+%patch -P1 -p1
 
 %install
 rm -rf $RPM_BUILD_ROOT
